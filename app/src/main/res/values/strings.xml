@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Assignment4Sender</string>
+    <string name="send_broadcast">Send BroadCast</string>
+    <string name="enter_message">Enter Message</string>
+</resources>

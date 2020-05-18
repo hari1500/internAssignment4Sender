@@ -2,6 +2,7 @@ package com.example.assignment4sender;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     public static final String intentAction = "com.assignment.ACTION_SEND_MESS";
     public static final String messageKey = "com.assignment.ACTION_SEND_MESS.MESS";
     public static final String intentPermission = "com.assignment.PERMISSION_HARI";
+    public static final String receiverPackageName = "com.example.assignment4receiver";
+    public static final String receiverName = "com.example.assignment4receiver.CustomReceiver";
     EditText editTextMessage;
 
     @Override
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setAction(intentAction);
         intent.putExtra(messageKey, editTextMessage.getText().toString());
+        intent.setComponent(new ComponentName(receiverPackageName, receiverName));
         sendBroadcast(intent, intentPermission);
     }
 }

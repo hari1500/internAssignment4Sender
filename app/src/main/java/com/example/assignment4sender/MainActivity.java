@@ -9,9 +9,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String intentAction = "com.assignment4.ACTION_SEND_MESS";
-    public static final String messageKey = "com.assignment4.ACTION_SEND_MESS.MESS";
-    public static final String intentPermission = "com.assignment4.PERMISSION_HARI";
+    public static final String intentAction = "com.assignment.ACTION_SEND_MESS";
+    public static final String messageKey = "com.assignment.ACTION_SEND_MESS.MESS";
+    public static final String intentPermission = "com.assignment.PERMISSION_HARI";
     EditText editTextMessage;
 
     @Override
